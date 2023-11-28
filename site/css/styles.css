@@ -45,8 +45,26 @@ header {
 }
 
 .pictures {
-    margin-right: 20px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+.pictures > img {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-left: 1%;
+    max-width: 500px;
+}
+
+.name {
+    font-size: 50px;
+}
+
 
 footer {
     background-color: darkcyan;
