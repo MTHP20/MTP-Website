@@ -82,6 +82,7 @@ header {
 }
 
 .description {
+    font-family: 'Raleway';
     margin-left: 100px;
     max-width: 500px;
 }
