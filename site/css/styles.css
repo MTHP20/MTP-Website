@@ -1,0 +1,50 @@
+body {
+    font-family: 'consolas', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: darkcyan;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.pictures {
+    margin-right: 20px;
+}
+
+footer {
+    background-color: darkcyan;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    height: 5%;
+    width: 100%;
+}
