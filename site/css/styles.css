@@ -31,12 +31,22 @@ header {
     color: black;
 }
 
+.nav-menu a:active {
+    color: grey;
+}
+
+.nav a {
+    text-decoration: none;
+    color: darkcyan;
+}
+
 .links {
     justify-content: space-evenly;
     display: flex;
     text-align: center;
     font-size: 12px;
 }
+
 
 .line-separator {
     margin: 10px 0;
@@ -64,10 +74,15 @@ header {
 .pictures > img {
     width: 48%;
     margin-bottom: 20px;
+    transition: 0.5s ease;
+}
+
+.pictures >img:hover {
+    transform: scale(1.1);
 }
 
 .description {
-    margin-left: 1%;
+    margin-left: 100px;
     max-width: 500px;
 }
 
@@ -76,7 +91,7 @@ header {
 }
 
 .text {
-    font-color: black;
+    color: black;
 }
 
 
