@@ -97,6 +97,11 @@ header {
     color: black;
 }
 
+.shortcuts {
+    display: flex;
+    margin-left: -10px;
+}
+
 
 footer {
     background-color: darkcyan;
