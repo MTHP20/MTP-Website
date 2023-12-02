@@ -14,10 +14,9 @@
 }
 
 .testimonial .image {
-    height: 250px;
-    width: 250px;
+    height: 350px;
+    border-color: black;
     object-fit: cover;
-    border-radius: 50%;
 }
 
 .testimonial .slide {
