@@ -1,18 +1,16 @@
 .container {
-    height: 100vh;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e3f2fd;
 }
 
 .testimonial {
     position: relative;
-    max-width: 900px;
+    max-width: 90%;
     width: 100%;
     padding: 50px;
-    background-color: #fff;
+    row-gap: 30px;
+    overflow: hidden;
 }
 
 .testimonial .image {
@@ -32,7 +30,26 @@
 .slide p {
     text-align: center;
     padding: 0 100px;
+    max-width: 750px;
     font-size: 14px;
     font-weight: 400;
-    color: #333;
+    color: black;
+}
+
+.slide .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details .title {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+.details .descriptionWork {
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
 }

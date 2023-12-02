@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Raleway:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/stylesWork.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../css/styles.css">
   <title>MTP</title>
   <link rel="icon" href="../images/MTPLOGO.jpg" type="image/x-icon">
@@ -37,9 +38,9 @@
   </header>
   <hr class="line-separator">
   <section class="container">
-    <div class="testimonial">
-      <div class="testi-content">
-        <div class="slide">
+    <div class="testimonial mySwiper">
+      <div class="testi-content swiper-wrapper">
+        <div class="slide swiper-slide">
           <img src="../images/website1.jpg" alt="" class="image" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem natus praesentium quasi. Tenetur, excepturi!
@@ -53,16 +54,46 @@
             <span class="descriptionWork">This is Project 1</span>
           </div>
         </div>
+        <div class="slide swiper-slide">
+          <img src="../images/website2.jpg" alt="" class="image" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem natus praesentium quasi. Tenetur, excepturi!
+            Repellendus quo asperiores modi sapiente vel accusantium assumenda molestiae quasi neque est. Obcaecati
+            fugit asperiores distinctio?
+          </p>
+
+          <div class="details">
+            <span class="title">Project 2</span>
+            <br>
+            <span class="descriptionWork">This is Project 2</span>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="../images/website3.jpg" alt="" class="image" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem natus praesentium quasi. Tenetur, excepturi!
+            Repellendus quo asperiores modi sapiente vel accusantium assumenda molestiae quasi neque est. Obcaecati
+            fugit asperiores distinctio?
+          </p>
+
+          <div class="details">
+            <span class="title">Project 3</span>
+            <br>
+            <span class="descriptionWork">This is Project 3</span>
+          </div>
+        </div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
-
+  <script src="../app/swiper-bundle.min.js"></script>
+  <script src="../app/scriptWork.js"></script>
   <br>
   <footer>
     <p>&copy; 2023 MTP Business</p>
   </footer>
-
-  <script src="../app/scriptWork.js"></script>
 </body>
 
 </html>
