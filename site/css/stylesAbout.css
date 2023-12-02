@@ -1,11 +1,19 @@
-img.sticky {
+.summary {
+    background-color: red;
+}
+
+div.sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    max-height: 500px;
-}
+    background-color: yellow;
+    padding: 50px;
+    padding-top: 0;
+    font-size: 20px;
+  }
 
 .aboutDescription {
     margin-left: 75px;
-    max-width: 650px;
+    max-width: 50%;
+    background-color: rebeccapurple;
 }
