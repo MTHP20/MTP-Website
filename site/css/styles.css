@@ -102,7 +102,6 @@ header {
     margin-left: -10px;
 }
 
-
 footer {
     background-color: darkcyan;
     color: black;
@@ -112,4 +111,5 @@ footer {
     bottom: 0;
     height: 5%;
     width: 100%;
+    z-index: 2;
 }

@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial {
+    position: relative;
+    max-width: 90%;
+    width: 100%;
+    padding: 50px;
+    row-gap: 30px;
+    overflow: hidden;
+}
+
+.testimonial .image {
+    height: 350px;
+    border-color: black;
+    object-fit: cover;
+}
+
+.testimonial .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slide p {
+    text-align: center;
+    padding: 0 100px;
+    max-width: 750px;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+
+.slide .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details .title {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+.details .descriptionWork {
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+}
