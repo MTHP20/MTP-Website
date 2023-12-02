@@ -1,0 +1,11 @@
+img.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    max-height: 500px;
+}
+
+.aboutDescription {
+    margin-left: 75px;
+    max-width: 650px;
+}
