@@ -1,19 +1,23 @@
-.summary {
-    background-color: red;
-}
 
 div.sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: yellow;
     padding: 50px;
     padding-top: 0;
     font-size: 20px;
   }
 
+.shortcuts {
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.shortcuts img {
+    border-radius: 50%;
+}
+
 .aboutDescription {
     margin-left: 75px;
     max-width: 50%;
-    background-color: rebeccapurple;
 }
