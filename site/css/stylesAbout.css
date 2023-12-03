@@ -1,0 +1,39 @@
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 50px;
+    padding-top: 0;
+    font-size: 20px;
+}
+
+.shortcuts {
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.shortcuts img {
+    border-radius: 50%;
+}
+
+.download-cv {
+    text-align: center;
+}
+
+.download-cv a {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+.download-cv a:active {
+    color: grey;
+}
+
+.aboutDescription {
+    margin-left: 75px;
+    max-width: 50%;
+}
+
+.about {
+    font-size: 75px;
+}
