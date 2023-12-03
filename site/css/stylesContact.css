@@ -47,4 +47,29 @@ textarea {
     outline: none;
     padding: 10px;
     box-sizing: border-box;
+    resize: none;
+}
+
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: darkcyan;
+}
+
+button {
+    background: darkcyan;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: white;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+
+.contact-left h1 {
+    color: darkcyan;
+    font-weight: 600;
+    margin-bottom: 30px;
 }
