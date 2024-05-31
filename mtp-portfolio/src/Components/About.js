@@ -6,6 +6,19 @@ const About = () => {
     <section id="about">
       <h2>About</h2>
       <p>This is the about section where you can describe yourself.</p>
+      <p>This is the about section where you can describe yourself.</p>
+      <p>This is the about section where you can describe yourself.</p>
+      <p>This is the about section where you can describe yourself.</p>
+      <p>This is the about section where you can describe yourself.</p>
+      <p>This is the about section where you can describe yourself.</p>
+      <p>This is the about section where you can describe yourself.</p>
+      <p>This is the about section where you can describe yourself.</p>
+      <p>This is the about section where you can describe yourself.</p>
+      <p>This is the about section where you can describe yourself.</p>
+      <p>This is the about section where you can describe yourself.</p>
+      <p>This is the about section where you can describe yourself.</p>
+      <p>This is the about section where you can describe yourself.</p>
+      
     </section>
   );
 };
