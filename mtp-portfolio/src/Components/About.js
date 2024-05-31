@@ -1,13 +1,13 @@
 import React from 'react';
-import './Blog.css';
+import './About.css';
 
-const Blog = () => {
+const About = () => {
   return (
-    <section id="Blog">
-      <h2>Blog</h2>
+    <section id="about">
+      <h2>About</h2>
       <p>This is the about section where you can describe yourself.</p>
     </section>
   );
 };
 
-export default Blog;
+export default About;
