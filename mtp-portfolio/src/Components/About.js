@@ -4,7 +4,7 @@ import './About.css';
 const About = () => {
   return (
     <section id="about">
-      <h2>About</h2>
+      <h2>TIMELINE SHOULD BE HERE</h2>
       <p>This is the about section where you can describe yourself.</p>
       <p>This is the about section where you can describe yourself.</p>
       <p>This is the about section where you can describe yourself.</p>
