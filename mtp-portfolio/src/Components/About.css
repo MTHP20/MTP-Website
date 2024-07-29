@@ -1,6 +1,27 @@
-.animation {
-    width: 400px;
-    height: 80px;
+.top {
+    margin-top: 20px;
+}
+.Timeline {
+    background-color: green;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aLevels, .uNi, .pResent {
+    width: 700px;
+    height: 100px;
     background-color: brown;
+    border-radius: 50px 50px 50px 50px;}
+
+
+.uNi {
     margin: 10px auto;
+    margin-top: 50px;
+}
+
+.pResent {
+    align-self: flex-end;
+    margin-right: 0;
+    margin-top: 50px;
 }
