@@ -2,8 +2,12 @@
     font-family: 'Dosis', sans-serif;
 }
 
+body {
+    padding-top: 100px;
+  }
+
 .top {
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .header {

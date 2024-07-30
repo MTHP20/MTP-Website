@@ -1,11 +1,13 @@
 header {
-  background-color: grey;
+  background-color: transparent;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 1%;
   z-index: 1000;
+  position: sticky;
+  top: 0;
 
 }
 
@@ -39,5 +41,11 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  text-decoration: underline;
+  border-radius: 50%;
+  color: #ff0;
+  cursor: pointer;
+}
+
+header nav ul li a:active {
+  color: #ff0;
 }
