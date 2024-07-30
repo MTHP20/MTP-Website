@@ -11,22 +11,78 @@ const About = () => {
   }, [])
   return (
     <section id="about">
-      <h2>ABOUT SECTION - TIMELINE - EDUCATION</h2>
+      <div className="header">EDUCATION</div>
       <div className='Timeline'>
-          <div className='aLevels' data-aos="flip-right">
+        <div className='aLevels' data-aos="flip-right">
           <div className='details'>
-
+            <div className='schoolGrade'>
+              <p>Easthampstead Park Community School</p>
+              <p>Mathematics (B) Further Mathematics (B) Geography (C)</p>
+            </div>
+            <div className='year'>
+              <p>2019 - 2021 (2 Years)</p>
+            </div>
           </div>
         </div>
-
-          <div className='uNi' data-aos="flip-right">
-            
-
+        <div className='uNi' data-aos="flip-right">
+          <div className='details'>
+            <div className='schoolGrade'>
+              <p>Royal Holloway, University of London</p>
+              <p>BSc Computer Science Upper Second Class Honours (2:1)</p>
+            </div>
+            <div className='year'>
+              <p>2021 - 2024 (3 Years)</p>
+            </div>
+          </div>
         </div>
-
-          <div className='pResent' data-aos="flip-right">
-            
-
+        <div className='pResent' data-aos="flip-right">
+        </div>
+      </div>
+      <div className="header">WORK EXPERIENCE</div>
+      <div className='Timeline'>
+      <div className='lloyds' data-aos="flip-right">
+          <div className='details'>
+            <div className='workDes'>
+              <p>LLoyd's Register</p>
+              <p>Data Administrator (Temporary)</p>
+            </div>
+            <div className='year'>
+              <p>2023 (June - September)</p>
+            </div>
+          </div>
+        </div>
+        <div className='limitless' data-aos="flip-right">
+          <div className='details'>
+            <div className='workDes'>
+              <p>Limitless Technology</p>
+              <p>Microsoft Technical Support Specialist (Freelance) </p>
+            </div>
+            <div className='year'>
+              <p>2024 (March - PRESENT)</p>
+            </div>
+          </div>
+        </div>
+        <div className='capable' data-aos="flip-right">
+          <div className='details'>
+            <div className='workDes'>
+              <p>Capable Limited</p>
+              <p>Manual Tester (Temporary) </p>
+            </div>
+            <div className='year'>
+              <p>2024 (May - June)</p>
+            </div>
+          </div>
+        </div>
+        <div className='sainsburys' data-aos="flip-right">
+          <div className='details'>
+            <div className='workDes'>
+              <p>Sainsbury's Bagshot Road</p>
+              <p>Customer Services Assistant (Part Time)</p>
+            </div>
+            <div className='year'>
+              <p>2019 - PRESENT (5 Years)</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

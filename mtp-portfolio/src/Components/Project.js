@@ -9,6 +9,7 @@ import GIFProject1 from "../images/GIFProject1.mp4";
 export default function Project() {
   return (
     <section id="projects">
+      <div className="header">MY RECENT PROJECTS</div>
       <Swiper
         pagination={{
           dynamicBullets: true,
@@ -17,9 +18,9 @@ export default function Project() {
         className="mySwiper"
       >
         <SwiperSlide>
-            <video src={GIFProject1} autoPlay loop muted playsInline>
-              Your browser does not support the video tag.
-            </video>
+          <video src={GIFProject1} autoPlay loop muted playsInline>
+            Your browser does not support the video tag.
+          </video>
         </SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
