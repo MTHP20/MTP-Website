@@ -39,6 +39,7 @@ const About = () => {
         <div className='pResent' data-aos="flip-right">
         </div>
       </div>
+      <div className='box'></div>
       <div className="header">WORK EXPERIENCE</div>
       <div className='Timeline'>
         <div className='lloyds' data-aos="flip-right">
