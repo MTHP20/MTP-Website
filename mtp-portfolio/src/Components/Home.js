@@ -13,7 +13,7 @@ const Home = () => {
           <img src={mainPhoto} alt="main" id="main" />
         </div>
         <div className='overviewContainer'>
-          <p>Over the past 3 years, I studied Computer Science at Royal Holloway, University of London, and recently graduated.
+          <p>Over the past 3 years, I've studied Computer Science at Royal Holloway, University of London and have recently graduated.
             Throughout my course, I've worked on various projects using different programming languages.</p>
           <p>As a recent graduate, I am focused on expanding my portfolio while further developing and strengthening my expertise in software.
             My goal is to leverage this experience to secure a position at a renowned organisation.</p>

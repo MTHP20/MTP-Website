@@ -1,23 +1,63 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Header.css';
 
 const Header = () => {
-    return (
-        <header>
-            <div className='container'>
-                <nav>
-                    <ul>
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#skills">SKILLS</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                        <li><a href="#blog">BLOG</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    );
+  useEffect(() => {
+    const header = document.querySelector('header');
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          navLinks.forEach((link) => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(id)) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    }, {
+      threshold: 0.7 // Adjust this value based on when you want the section to be considered "in view"
+    });
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+
+  return (
+    <header>
+      <div className='container'>
+        <nav>
+          <ul>
+            <li><a href="#home">&nbsp;&nbsp;HOME&nbsp;&nbsp;</a></li>
+            <li><a href="#about">&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</a></li>
+            <li><a href="#projects">&nbsp;&nbsp;PROJECTS&nbsp;&nbsp;</a></li>
+            <li><a href="#skills">&nbsp;&nbsp;SKILLS&nbsp;&nbsp;</a></li>
+            <li><a href="#contact">&nbsp;&nbsp;CONTACT&nbsp;&nbsp;</a></li>
+            <li><a href="#blog">&nbsp;&nbsp;BLOG&nbsp;&nbsp;</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
 };
 
 export default Header;

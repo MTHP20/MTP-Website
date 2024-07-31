@@ -15,7 +15,6 @@ body {
 section {
     display: grid;
     place-items: center;
-    align-content: center;
     min-height: 100vh;
 }
 
@@ -34,6 +33,7 @@ section {
 
 .logos {
     display: flex;
+    gap: 50px;
 }
 
 .logo:nth-child() {
@@ -50,7 +50,6 @@ section {
 
 #icons {
     border-radius: 50%;
-    margin-left: 50px;
     width: 150px;
     border: 1px solid black;
     box-shadow: 2px 4px 5px #000;
