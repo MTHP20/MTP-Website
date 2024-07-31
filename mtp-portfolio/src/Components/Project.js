@@ -9,7 +9,9 @@ import GIFProject1 from "../images/GIFProject1.mp4";
 export default function Project() {
   return (
     <section id="projects">
+      <br></br><br></br><br></br><br></br><br></br><br></br>
       <div className="header">MY RECENT PROJECTS</div>
+      <br></br>
       <Swiper
         pagination={{
           dynamicBullets: true,

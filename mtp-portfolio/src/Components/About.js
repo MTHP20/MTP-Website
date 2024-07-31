@@ -11,6 +11,7 @@ const About = () => {
   }, [])
   return (
     <section id="about">
+      <br></br><br></br><br></br><br></br><br></br><br></br>
       <div className="header">EDUCATION</div>
       <div className='Timeline'>
         <div className='aLevels' data-aos="flip-right">
@@ -40,7 +41,7 @@ const About = () => {
       </div>
       <div className="header">WORK EXPERIENCE</div>
       <div className='Timeline'>
-      <div className='lloyds' data-aos="flip-right">
+        <div className='lloyds' data-aos="flip-right">
           <div className='details'>
             <div className='workDes'>
               <p>LLoyd's Register</p>

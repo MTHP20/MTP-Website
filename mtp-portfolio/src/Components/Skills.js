@@ -44,7 +44,7 @@ const Skills = () => {
       });
     });
 
-    const hiddenElements = document.querySelectorAll('.hidden');
+    const hiddenElements = document.querySelectorAll('.logo.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
 
     return () => {
@@ -54,6 +54,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="hidden">
+      <br></br><br></br><br></br><br></br><br></br><br></br>
       <div className="header">SKILLS</div>
       <div class="logos">
         <div class="logo hidden">
