@@ -48,10 +48,7 @@ section {
     transition-delay: 600ms;
 }
 
-#icons {
+#shortcut {
     border-radius: 50%;
-    width: 150px;
-    border: 1px solid black;
-    box-shadow: 2px 4px 5px #000;
-    margin-top: 25px;
+    width: 30px;
 }

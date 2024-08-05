@@ -51,8 +51,14 @@ const Header = () => {
             <li><a href="#about">&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</a></li>
             <li><a href="#projects">&nbsp;&nbsp;PROJECTS&nbsp;&nbsp;</a></li>
             <li><a href="#skills">&nbsp;&nbsp;SKILLS&nbsp;&nbsp;</a></li>
-            <li><a href="#contact">&nbsp;&nbsp;CONTACT&nbsp;&nbsp;</a></li>
-            <li><a href="#blog">&nbsp;&nbsp;BLOG&nbsp;&nbsp;</a></li>
+            <li><a href="#blog">&nbsp;&nbsp;MORE!&nbsp;&nbsp;</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li><a href="#contact">&nbsp;&nbsp;Contact&nbsp;&nbsp;</a></li>
+            <li><a href="https://www.linkedin.com/in/mthp/">&nbsp;&nbsp;LinkedIn&nbsp;&nbsp;</a></li>
+            <li><a href="http://github.com/MTHP20">&nbsp;&nbsp;GitHub&nbsp;&nbsp;</a></li>
           </ul>
         </nav>
       </div>

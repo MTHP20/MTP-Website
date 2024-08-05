@@ -44,7 +44,7 @@ const Skills = () => {
       });
     });
 
-    const hiddenElements = document.querySelectorAll('.logo.hidden');
+    const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
 
     return () => {
