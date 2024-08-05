@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 
 const Header = () => {
+  const [isContactFormVisible, setContactFormVisible] = useState(false);
+
   useEffect(() => {
     const header = document.querySelector('header');
     const sections = document.querySelectorAll('section');
@@ -42,6 +44,10 @@ const Header = () => {
     };
   }, []);
 
+  const toggleContactForm = () => {
+    setContactFormVisible(!isContactFormVisible);
+  };
+
   return (
     <header>
       <div className='container'>
@@ -56,11 +62,22 @@ const Header = () => {
         </nav>
         <nav>
           <ul>
-            <li><a href="#contact">&nbsp;&nbsp;Contact&nbsp;&nbsp;</a></li>
+            <li><a onClick={toggleContactForm}>&nbsp;&nbsp;Contact&nbsp;&nbsp;</a></li>
             <li><a href="https://www.linkedin.com/in/mthp/">&nbsp;&nbsp;LinkedIn&nbsp;&nbsp;</a></li>
             <li><a href="http://github.com/MTHP20">&nbsp;&nbsp;GitHub&nbsp;&nbsp;</a></li>
           </ul>
         </nav>
+      </div>
+      <div className={`contactForm ${isContactFormVisible ? 'visible' : ''}`} id="contactForm">
+        <form>
+          <h2>Send me an Email!</h2>
+          <input type="email" placeholder="Your Email" />
+          <textarea placeholder="Your Message..."></textarea>
+          <div>
+            <button type="submit" className="primaryBtn">Send</button>
+            <button type="button" className="secondaryBtn" onClick={toggleContactForm}>Close</button>
+          </div>
+        </form>
       </div>
     </header>
   );

@@ -69,3 +69,66 @@ header nav ul li a.active {
   box-shadow: 2px 4px 5px #000;
   margin-top: 25px;
 }
+
+.contactForm {
+  position: fixed;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(0, 138, 108);
+  padding: 10px;
+  color: white;
+  box-shadow: 0px 3px 5px lightgray;
+  min-height: 350px;
+  min-width: 300px;
+  z-index: 10;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contactForm.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contactForm form input,.contactForm form textarea {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0px 4px 3px rgb(58, 57, 57)
+
+}
+
+button {
+  padding: 10px 30px;
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 30px;
+  width: 100px;
+  border: none;
+  box-shadow: 0px 2px 3px rgb(48, 47, 47);
+  cursor: pointer;
+}
+
+.primaryBtn {
+  background-color: rgb(0, 190, 127);
+  color: white;
+}
+
+.primaryBtn:hover {
+  background: rgb(2, 158, 124)
+}
+
+.secondaryBtn:hover {
+  background: rgb(255, 0, 0)
+}
