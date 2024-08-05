@@ -1,0 +1,117 @@
+#about {
+    font-family: 'Dosis', sans-serif;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main {
+  padding: 5rem;
+  padding-top: 0rem; /* Adjust this value to match the height of your header */
+}
+
+body {
+    padding-top: 10px;
+  }
+
+.top {
+    margin-top: 0px;
+}
+
+.header {
+    font-size: 50px;
+    text-align: center;
+}
+
+.Timeline {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aLevels,
+.uNi,
+.pResent,
+.sainsburys,
+.lloyds,
+.limitless,
+.capable {
+    width: 700px;
+    height: 100px;
+    background-color: rgb(241, 88, 88);
+    border-radius: 50px 50px 50px 50px;
+    margin-top: 50px;
+}
+
+.uNi {
+    margin: 10px auto;
+    margin-top: 150px;
+}
+
+.pResent {
+    align-self: flex-end;
+    margin-right: 0;
+    margin-top: 150px;
+}
+
+.details {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+}
+
+.schoolGrade {
+    flex: 1;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.year {
+    text-align: end;
+    flex: 0 0 auto;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sainsburys {
+    width: 100%;
+    margin-top: 50px;
+    background-color: #6a3541;
+    color: #f47322;
+}
+
+.lloyds {
+    width: 30%;
+    margin-left: 40%;
+    margin-top: 50px;
+    background-color: #00a99e;
+    color: white;
+}   
+
+.limitless {
+    width: 38%;
+    margin-left: 62%;
+    margin-top: 50px;
+    background-color: #071031;
+    color: #64d3e5;
+}
+
+.capable {
+    width: 25%;
+    margin-left: 70%;
+    margin-top: 50px;
+    background-color: #2120c4;
+    color: white;
+}
+
+.workDes {
+    flex: 1;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.box {
+    height: 120px;
+}

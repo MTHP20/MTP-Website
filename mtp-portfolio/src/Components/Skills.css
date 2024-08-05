@@ -1,0 +1,54 @@
+#skills {
+    font-family: 'Dosis', sans-serif;
+}
+
+.header {
+    font-size: 50px;
+    text-align: center;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+
+.logos {
+    display: flex;
+    gap: 50px;
+}
+
+.logo:nth-child() {
+    transition-delay: 200ms;
+}
+
+.logo:nth-child() {
+    transition-delay: 400ms;
+}
+
+.logo:nth-child() {
+    transition-delay: 600ms;
+}
+
+#shortcut {
+    border-radius: 50%;
+    width: 30px;
+}

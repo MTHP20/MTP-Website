@@ -1,0 +1,50 @@
+#home {
+    font-family: 'Dosis', sans-serif;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+.nameTitle {
+    font-size: 75px;
+    text-align: center;
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    position: relative;
+}
+
+#main {
+    width: 375px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+/* #spotify {
+    background-color: red;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100px;
+    width: 375px;
+  } */
+
+.overviewContainer {
+    font-weight: bold;
+    font-size: 28px;
+    width: 750px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
