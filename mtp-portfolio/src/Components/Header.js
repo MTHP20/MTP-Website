@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
+import profile from '../images/profile.jpg';
 
 const Header = () => {
   const [isContactFormVisible, setContactFormVisible] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     const header = document.querySelector('header');
@@ -11,9 +13,9 @@ const Header = () => {
 
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        header.classList.add('scrolled');
+        header?.classList.add('scrolled');
       } else {
-        header.classList.remove('scrolled');
+        header?.classList.remove('scrolled');
       }
     };
 
@@ -23,14 +25,14 @@ const Header = () => {
           const id = entry.target.getAttribute('id');
           navLinks.forEach((link) => {
             link.classList.remove('active');
-            if (link.getAttribute('href').includes(id)) {
+            if (id && link.getAttribute('href')?.includes(id)) {
               link.classList.add('active');
             }
           });
         }
       });
     }, {
-      threshold: 0.7 // Adjust this value based on when you want the section to be considered "in view"
+      threshold: 0.7
     });
 
     sections.forEach((section) => {
@@ -45,9 +47,20 @@ const Header = () => {
   }, []);
 
   const toggleContactForm = () => {
-    setContactFormVisible(!isContactFormVisible);
+    if (isContactFormVisible) {
+      setIsAnimating(true);
+    } else {
+      setContactFormVisible(true);
+    }
   };
 
+  const handleAnimationEnd = () => {
+    if (isAnimating) {
+      setContactFormVisible(false);
+      setIsAnimating(false);
+    }
+  };
+  
   return (
     <header>
       <div className='container'>
@@ -68,14 +81,22 @@ const Header = () => {
           </ul>
         </nav>
       </div>
-      <div className={`contactForm ${isContactFormVisible ? 'visible' : ''}`} id="contactForm">
+        <div className={`contactForm ${isContactFormVisible ? 'show' : ''} ${isAnimating ? 'hide' : ''}`} id="contactForm" onAnimationEnd={handleAnimationEnd}>
+        <div className='contactTitle'>
+          <img src={profile} alt="profile" id="profile" />
+          <div className='caption'>
+            <h2>CONTACT ME HERE!</h2>
+          </div>
+          <div>
+            <button type="button" className="secondaryBtn" onClick={toggleContactForm}>X</button>
+          </div>
+        </div>
         <form>
-          <h2>Send me an Email!</h2>
-          <input type="email" placeholder="Your Email" />
-          <textarea placeholder="Your Message..."></textarea>
+          <input type="email" placeholder="YOUR EMAIL" />
+          <textarea placeholder="SUBJECT"></textarea>
+          <textarea placeholder="ENTER MESSAGE..."></textarea>
           <div>
             <button type="submit" className="primaryBtn">Send</button>
-            <button type="button" className="secondaryBtn" onClick={toggleContactForm}>Close</button>
           </div>
         </form>
       </div>

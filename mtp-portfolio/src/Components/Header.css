@@ -70,22 +70,75 @@ header nav ul li a.active {
   margin-top: 25px;
 }
 
+.formSection {
+  position: fixed;
+}
+
+#profile {
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contactTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  height: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: #6483AF;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToBottom {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.contactForm.show {
+  visibility: visible;
+  animation: slideInFromBottom 0.3s ease-out forwards;
+}
+
+.contactForm.hide {
+  animation: slideOutToBottom 0.3s ease-out forwards;
+  visibility: hidden;
+  opacity: 0;
+}
 .contactForm {
   position: fixed;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-  bottom: 20px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  bottom: 50px;
   right: 20px;
-  background-color: rgb(0, 138, 108);
-  padding: 10px;
-  color: white;
+  background-color: rgb(255, 255, 255, 0.3);  color: white;
   box-shadow: 0px 3px 5px lightgray;
-  min-height: 350px;
-  min-width: 300px;
+  min-height: 550px;
+  min-width: 360px;
   z-index: 10;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   opacity: 0;
   visibility: hidden;
+  border-radius: 20px;
 }
 
 .contactForm.visible {
@@ -97,19 +150,20 @@ header nav ul li a.active {
 .contactForm form {
   display: flex;
   flex-direction: column;
-
 }
 
-.contactForm form input,.contactForm form textarea {
+.contactForm form input,
+.contactForm form textarea {
   margin: 10px;
   padding: 10px;
   font-size: 16px;
   border: none;
   box-shadow: 0px 4px 3px rgb(58, 57, 57)
-
 }
 
-button {
+.primaryBtn {
+  background-color: rgb(0, 190, 127);
+  color: white;
   padding: 10px 30px;
   margin: 10px;
   font-weight: bold;
@@ -120,15 +174,24 @@ button {
   cursor: pointer;
 }
 
-.primaryBtn {
-  background-color: rgb(0, 190, 127);
-  color: white;
-}
-
 .primaryBtn:hover {
   background: rgb(2, 158, 124)
 }
 
+.secondaryBtn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50% 50%;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+
 .secondaryBtn:hover {
-  background: rgb(255, 0, 0)
+  background-color: rgb(255, 255, 255, 0.3);
 }
