@@ -4,9 +4,18 @@ import pdf from '../images/CV.pdf';
 
 const CV = () => {
   const [isModalVisible, setModalVisible] = useState(false);
+  const [isAnimating, setAnimating] = useState(false);
 
   const toggleModalVisibility = () => {
-    setModalVisible(!isModalVisible);
+    if (isModalVisible) {
+      setAnimating(true);
+      setTimeout(() => {
+        setModalVisible(false);
+        setAnimating(false);
+      }, 300);
+    } else {
+      setModalVisible(true);
+    }
   };
 
   useEffect(() => {
@@ -22,7 +31,10 @@ const CV = () => {
       <h1 className='cvTitle' onClick={toggleModalVisibility}>VIEW MY CV!</h1>
       {isModalVisible && (
         <div className="modalOverlay" onClick={toggleModalVisibility}>
-          <div className="modalContent" onClick={(e) => e.stopPropagation()}>
+          <div
+            className={`modalContent ${isAnimating ? 'slide-out' : 'slide-in'}`}
+            onClick={(e) => e.stopPropagation()}
+          >
             <iframe src={pdf} title="My CV" />
           </div>
         </div>
