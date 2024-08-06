@@ -1,5 +1,6 @@
 import React from 'react';
 import mainPhoto from '../images/mainPhoto.jpg';
+import spotify from '../images/spotify.jpg';
 import './Home.css';
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
       <div className='aboutContainer'>
         <div className='profile'>
           <img src={mainPhoto} alt="main" id="main" />
+          {/* <img src={spotify} alt="main" id="spotify" /> */}
         </div>
         <div className='overviewContainer'>
           <p>Over the past 3 years, I've studied Computer Science at Royal Holloway, University of London and have recently graduated.
