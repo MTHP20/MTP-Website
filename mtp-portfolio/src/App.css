@@ -1,8 +1,16 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   font-family: "Dosis", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100vh;
+  background: rgb(255,249,237);
+background: linear-gradient(180deg, rgba(255,249,237,1) 0%, rgba(255,240,212,1) 50%, rgba(255,249,237,1) 100%);
 }
 
 header {

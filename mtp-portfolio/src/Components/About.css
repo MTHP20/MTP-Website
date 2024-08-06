@@ -40,7 +40,7 @@ body {
 .capable {
     width: 700px;
     height: 100px;
-    background-color: rgb(241, 88, 88);
+    background-color: #6483AF;
     border-radius: 50px 50px 50px 50px;
     margin-top: 50px;
 }

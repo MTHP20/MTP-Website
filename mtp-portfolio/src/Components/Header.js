@@ -20,19 +20,27 @@ const Header = () => {
     };
 
     const observer = new IntersectionObserver((entries) => {
+      let activeId = null;
+
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const id = entry.target.getAttribute('id');
-          navLinks.forEach((link) => {
+          activeId = entry.target.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach((link) => {
+        const href = link.getAttribute('href');
+        if (href) {
+          const id = href.replace('#', '');
+          if (id === activeId) {
+            link.classList.add('active');
+          } else {
             link.classList.remove('active');
-            if (id && link.getAttribute('href')?.includes(id)) {
-              link.classList.add('active');
-            }
-          });
+          }
         }
       });
     }, {
-      threshold: 0.7
+      threshold: 0.5
     });
 
     sections.forEach((section) => {
@@ -60,7 +68,7 @@ const Header = () => {
       setIsAnimating(false);
     }
   };
-  
+
   return (
     <header>
       <div className='container'>
@@ -81,7 +89,7 @@ const Header = () => {
           </ul>
         </nav>
       </div>
-        <div className={`contactForm ${isContactFormVisible ? 'show' : ''} ${isAnimating ? 'hide' : ''}`} id="contactForm" onAnimationEnd={handleAnimationEnd}>
+      <div className={`contactForm ${isContactFormVisible ? 'show' : ''} ${isAnimating ? 'hide' : ''}`} id="contactForm" onAnimationEnd={handleAnimationEnd}>
         <div className='contactTitle'>
           <img src={profile} alt="profile" id="profile" />
           <div className='caption'>
@@ -92,11 +100,11 @@ const Header = () => {
           </div>
         </div>
         <form>
-          <input type="email" placeholder="YOUR EMAIL" />
-          <textarea placeholder="SUBJECT"></textarea>
-          <textarea placeholder="ENTER MESSAGE..."></textarea>
+          <input type="email" placeholder="YOUR EMAIL"></input>
+          <textarea className='subject' placeholder="SUBJECT" maxlength="40"></textarea>
+          <textarea className='message' placeholder="ENTER MESSAGE..."></textarea>
           <div>
-            <button type="submit" className="primaryBtn">Send</button>
+            <button type="submit" className="primaryBtn">SEND</button>
           </div>
         </form>
       </div>

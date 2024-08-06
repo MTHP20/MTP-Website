@@ -1,3 +1,7 @@
+#header {
+  font-family: 'Dosis', sans-serif;
+}
+
 header {
   background-color: transparent;
   display: flex;
@@ -21,7 +25,7 @@ header nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
-  padding: 0;
+  padding: 7px;
   margin: 0;
   background-color: transparent;
   border-radius: 50px;
@@ -37,8 +41,9 @@ header nav ul li:last-child {
 }
 
 header.scrolled nav ul {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(100, 131, 175, 0.5);
   border-radius: 50px;
+  padding: 7px;
 }
 
 header nav ul li {
@@ -58,7 +63,7 @@ header nav ul li a:hover {
 }
 
 header nav ul li a.active {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgb(255, 255, 255, 0.5);
   border-radius: 50px;
 }
 
@@ -86,7 +91,7 @@ header nav ul li a.active {
   justify-content: space-between;
   padding: 15px;
   height: 40px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   background-color: #6483AF;
@@ -129,7 +134,9 @@ header nav ul li a.active {
   transition: opacity 0.3s ease, visibility 0.3s ease;
   bottom: 50px;
   right: 20px;
-  background-color: rgb(255, 255, 255, 0.3);  color: white;
+  background-color: rgb(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  color: rgba(255, 255, 255, 0.849);
   box-shadow: 0px 3px 5px lightgray;
   min-height: 550px;
   min-width: 360px;
@@ -154,11 +161,12 @@ header nav ul li a.active {
 
 .contactForm form input,
 .contactForm form textarea {
+  font-family: 'Dosis', sans-serif;
   margin: 10px;
   padding: 10px;
-  font-size: 16px;
+  font-size: 20px;
   border: none;
-  box-shadow: 0px 4px 3px rgb(58, 57, 57)
+  box-shadow: 0 4px 3px rgba(58, 57, 57, 0.2);
 }
 
 .primaryBtn {
@@ -172,6 +180,7 @@ header nav ul li a.active {
   border: none;
   box-shadow: 0px 2px 3px rgb(48, 47, 47);
   cursor: pointer;
+  font-family: 'Dosis', sans-serif;
 }
 
 .primaryBtn:hover {
@@ -191,7 +200,17 @@ header nav ul li a.active {
   cursor: pointer;
 }
 
-
 .secondaryBtn:hover {
   background-color: rgb(255, 255, 255, 0.3);
+}
+
+.subject {
+  resize: none;
+  height: 27px
+}
+
+textarea.message {
+  resize: none;
+  height: 250px;
+  font-size: 10px;
 }
