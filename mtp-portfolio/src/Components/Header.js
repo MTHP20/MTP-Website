@@ -5,6 +5,9 @@ import profile from '../images/profile.jpg';
 const Header = () => {
   const [isContactFormVisible, setContactFormVisible] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
 
   useEffect(() => {
     const header = document.querySelector('header');
@@ -69,6 +72,26 @@ const Header = () => {
     }
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    window.Email.send({
+      Host: "smtp.yourisp.com",
+      Username: "your_email@example.com",
+      Password: "your_email_password",
+      To: 'recipient@example.com',
+      From: email,
+      Subject: subject,
+      Body: message,
+    }).then(
+      message => alert(message)
+    );
+
+    setEmail('');
+    setSubject('');
+    setMessage('');
+  };
+
   return (
     <header>
       <div className='container'>
@@ -99,10 +122,29 @@ const Header = () => {
             <button type="button" className="secondaryBtn" onClick={toggleContactForm}>X</button>
           </div>
         </div>
-        <form>
-          <input type="email" placeholder="EMAIL" required></input>
-          <textarea className='subject' placeholder="SUBJECT" maxlength="25" required></textarea>
-          <textarea className='message' placeholder="ENTER MESSAGE..." required></textarea>
+        <form onSubmit={handleSubmit}>
+          <input 
+            type="email" 
+            placeholder="EMAIL" 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)} 
+            required 
+          />
+          <textarea 
+            className='subject' 
+            placeholder="SUBJECT" 
+            maxLength="25" 
+            value={subject} 
+            onChange={(e) => setSubject(e.target.value)} 
+            required 
+          />
+          <textarea 
+            className='message' 
+            placeholder="ENTER MESSAGE..." 
+            value={message} 
+            onChange={(e) => setMessage(e.target.value)} 
+            required 
+          />
           <div>
             <button type="submit" className="primaryBtn">SEND</button>
           </div>
