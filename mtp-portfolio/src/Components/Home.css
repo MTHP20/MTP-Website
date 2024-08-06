@@ -1,4 +1,12 @@
- 
+#home {
+    font-family: "League Spartan", sans-serif;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 75px;
+    box-sizing: border-box;
+}
+
 
 .nameTitle {
     font-size: 75px;
@@ -14,12 +22,16 @@
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
     position: relative;
+    width: 375px;
+
 }
 
 #main {
     width: 375px;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    box-shadow: 0 4px 3px rgba(58, 57, 57, 0.5);
+    border-color: black;
 }
 
 /* #spotify {
@@ -28,8 +40,8 @@
     bottom: 0px;
     left: 50%;
     transform: translate(-50%);
-    height: 100px;
     width: 375px;
+    border-color: black 2px;
   } */
 
 .overviewContainer {
@@ -41,3 +53,4 @@
     flex-direction: column;
     justify-content: center;
 }
+
