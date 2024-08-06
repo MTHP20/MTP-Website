@@ -78,7 +78,7 @@ const Header = () => {
             <li><a href="#about">&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</a></li>
             <li><a href="#projects">&nbsp;&nbsp;PROJECTS&nbsp;&nbsp;</a></li>
             <li><a href="#skills">&nbsp;&nbsp;SKILLS&nbsp;&nbsp;</a></li>
-            <li><a href="#blog">&nbsp;&nbsp;MORE!&nbsp;&nbsp;</a></li>
+            <li><a href="#CV">&nbsp;&nbsp;CV&nbsp;&nbsp;</a></li>
           </ul>
         </nav>
         <nav>
@@ -100,8 +100,8 @@ const Header = () => {
           </div>
         </div>
         <form>
-          <input type="email" placeholder="YOUR EMAIL"></input>
-          <textarea className='subject' placeholder="SUBJECT" maxlength="40"></textarea>
+          <input type="email" placeholder="EMAIL"></input>
+          <textarea className='subject' placeholder="SUBJECT" maxlength="25"></textarea>
           <textarea className='message' placeholder="ENTER MESSAGE..."></textarea>
           <div>
             <button type="submit" className="primaryBtn">SEND</button>
