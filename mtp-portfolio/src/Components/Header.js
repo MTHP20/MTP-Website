@@ -100,9 +100,9 @@ const Header = () => {
           </div>
         </div>
         <form>
-          <input type="email" placeholder="EMAIL"></input>
-          <textarea className='subject' placeholder="SUBJECT" maxlength="25"></textarea>
-          <textarea className='message' placeholder="ENTER MESSAGE..."></textarea>
+          <input type="email" placeholder="EMAIL" required></input>
+          <textarea className='subject' placeholder="SUBJECT" maxlength="25" required></textarea>
+          <textarea className='message' placeholder="ENTER MESSAGE..." required></textarea>
           <div>
             <button type="submit" className="primaryBtn">SEND</button>
           </div>
