@@ -3,19 +3,27 @@
     width: 100%;
     max-width: 90%;
     margin: 0 auto;
-    padding: 75px;
+    padding: 100px;
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+    font-family: "League Spartan", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 .nameTitle {
     font-size: 75px;
     text-align: center;
+    color: #6483AF;
 }
 
 .aboutContainer {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .profile {
@@ -27,11 +35,12 @@
 }
 
 #main {
-    width: 375px;
+    width: 90%;
+    max-width: 375px;
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
     box-shadow: 0 4px 3px rgba(58, 57, 57, 0.5);
-    border-color: black;
+
 }
 
 /* #spotify {
@@ -46,11 +55,14 @@
 
 .overviewContainer {
     font-weight: bold;
-    font-size: 28px;
-    width: 750px;
-    margin-left: 100px;
+    font-size: 1.9rem;
+    width: 90%;
+    max-width: 750px;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #6483AF;
 }
-
