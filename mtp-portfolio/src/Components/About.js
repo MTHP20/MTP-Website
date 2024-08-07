@@ -52,13 +52,23 @@ const About = () => {
       </div>
       <div className='box'></div>
       <div className="moreInfo">
-        <div className="box1">
-          <h1>hi</h1>
+        <div class="grid-item">I've always had a set path to study Computer Science all starting from a high interest in technology and building computers when I was younger.
+          As learned throughout my course at Royal Holloway, I'd say my favourite programming language to use is Java.
+          I aim to expand my expertise by learning more programming languages and code bigger projects within.
         </div>
-        <div className="box2">
-          <h1>bye</h1>
+        <div class="grid-item">However, I also enjoy coding in HTML and JavaScript with this being the programming language I've used the most.
+          From personal projects like this Portfolio to university projects such as a Restaurant Management System I aspire to create a small business and start developing websites for local clients on the side.
+          <br></br><i>See projects down below.</i>
+        </div>
+        <div class="grid-item">Along this side hustle, I'm also driven to obtain a full-time career in the Software Development or Full Stack Engineering field.
+          I've also gained an interest in technology consultancy field where I would be able to utilise modules I've learnt such as IT Project Management to support companies with
+          IT solutions leveraging my problem-solving acumen and dedication to deliver high-quality solutions.
+        </div>
+        <div class="grid-item">Outside work I enjoy playing basketball and exercising regularly at the gym to ensure activity and healthiness, listening to and playing music,
+          and hopefully soon travel and explore different parts of the world
         </div>
       </div>
+      <div className='box'></div>
       <div className="header">WORK EXPERIENCE</div>
       <div className='Timeline'>
         <div className='lloyds' data-aos="flip-right">
