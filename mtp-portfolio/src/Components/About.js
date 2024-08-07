@@ -14,6 +14,17 @@ const About = () => {
       <br></br><br></br><br></br><br></br><br></br><br></br>
       <div className="header">EDUCATION</div>
       <div className='Timeline'>
+        <div className='gcses' data-aos="flip-right">
+          <div className='details'>
+            <div className='schoolGrade'>
+              <p>Easthampstead Park Community School</p>
+              <p>8 GCSES at Grades 7-5 including A/7 Mathematics </p>
+            </div>
+            <div className='year'>
+              <p>2016 - 2019 (3 YEARS)</p>
+            </div>
+          </div>
+        </div>
         <div className='aLevels' data-aos="flip-right">
           <div className='details'>
             <div className='schoolGrade'>
@@ -21,7 +32,7 @@ const About = () => {
               <p>Mathematics (B) Further Mathematics (B) Geography (C)</p>
             </div>
             <div className='year'>
-              <p>2019 - 2021 (2 Years)</p>
+              <p>2019 - 2021 (2 YEARS)</p>
             </div>
           </div>
         </div>
@@ -32,7 +43,7 @@ const About = () => {
               <p>BSc Computer Science Upper Second Class Honours (2:1)</p>
             </div>
             <div className='year'>
-              <p>2021 - 2024 (3 Years)</p>
+              <p>2021 - 2024 (3 YEARS)</p>
             </div>
           </div>
         </div>
@@ -40,6 +51,14 @@ const About = () => {
         </div>
       </div>
       <div className='box'></div>
+      <div className="moreInfo">
+        <div className="box1">
+          <h1>hi</h1>
+        </div>
+        <div className="box2">
+          <h1>bye</h1>
+        </div>
+      </div>
       <div className="header">WORK EXPERIENCE</div>
       <div className='Timeline'>
         <div className='lloyds' data-aos="flip-right">
