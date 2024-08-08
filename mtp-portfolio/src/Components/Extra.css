@@ -1,0 +1,50 @@
+#extra {
+    font-family: "League Spartan", sans-serif;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.collage-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.collage-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust columns based on your collage */
+  gap: 5px; /* Adjust spacing between images */
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.collage-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 100;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
