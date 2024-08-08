@@ -27,15 +27,10 @@ import slack from '../images/slack.png';
 import confluence from '../images/confluence.png';
 import arcade from '../images/arcade.png';
 
-
-
-
-
 const Skills = () => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting) {
           entry.target.classList.add('show');
         } else {
@@ -54,99 +49,125 @@ const Skills = () => {
 
   return (
     <section id="skills" className="hidden">
-      <br></br><br></br><br></br><br></br><br></br><br></br>
+      <br /><br /><br /><br /><br /><br />
       <div className="header">SKILLS</div>
-      <div class="logos">
-        <div class="logo hidden">
-          <img src={java} alt="main" id="icons" />
+      <div className="logos">
+        <div className="logo hidden">
+          <img src={java} alt="Java" id="icons" />
+          <div className="overlay">Java</div>
         </div>
-        <div class="logo hidden">
-          <img src={python} alt="main" id="icons" />
+        <div className="logo hidden">
+          <img src={python} alt="Python" id="icons" />
+          <div className="overlay">Python</div>
         </div>
-        <div class="logo hidden">
-          <img src={c} alt="main" id="icons" />
+        <div className="logo hidden">
+          <img src={c} alt="C" id="icons" />
+          <div className="overlay">C</div>
         </div>
-        <div class="logo hidden">
-          <img src={sql} alt="main" id="icons" />
-        </div>
-      </div>
-      <br></br>
-      <div class="logos">
-        <div class="logo hidden">
-          <img src={html5} alt="main" id="icons" />
-        </div>
-        <div class="logo hidden">
-          <img src={css} alt="main" id="icons" />
-        </div>
-        <div class="logo hidden">
-          <img src={js} alt="main" id="icons" />
-        </div>
-        <div class="logo hidden">
-          <img src={node} alt="main" id="icons" />
-        </div>
-        <div class="logo hidden">
-          <img src={react} alt="main" id="icons" />
+        <div className="logo hidden">
+          <img src={sql} alt="SQL" id="icons" />
+          <div className="overlay">SQL</div>
         </div>
       </div>
-      <div class="logos">
-        <div class="logo hidden">
-          <img src={tdd} alt="main" id="icons" />
+      <br />
+      <div className="logos">
+        <div className="logo hidden">
+          <img src={html5} alt="HTML5" id="icons" />
+          <div className="overlay">HTML5</div>
         </div>
-        <div class="logo hidden">
-          <img src={maven} alt="main" id="icons" />
+        <div className="logo hidden">
+          <img src={css} alt="CSS" id="icons" />
+          <div className="overlay">CSS</div>
         </div>
-        <div class="logo hidden">
-          <img src={junit} alt="main" id="icons" />
+        <div className="logo hidden">
+          <img src={js} alt="JavaScript" id="icons" />
+          <div className="overlay">JavaScript</div>
         </div>
-        <div class="logo hidden">
-          <img src={svn} alt="main" id="icons" />
+        <div className="logo hidden">
+          <img src={node} alt="Node.js" id="icons" />
+          <div className="overlay">Node.js</div>
         </div>
-        <div class="logo hidden">
-          <img src={checkstyle} alt="main" id="icons" />
-        </div>
-      </div>
-      <div class="logos">
-        <div class="logo hidden">
-          <img src={jira} alt="main" id="icons" />
-        </div>
-        <div class="logo hidden">
-          <img src={confluence} alt="main" id="icons" />
-        </div>
-        <div class="logo hidden">
-          <img src={slack} alt="main" id="icons" />
-        </div>
-        <div class="logo hidden">
-          <img src={arcade} alt="main" id="icons" />
+        <div className="logo hidden">
+          <img src={react} alt="React" id="icons" />
+          <div className="overlay">React</div>
         </div>
       </div>
-      <div class="logos">
-        <div class="logo hidden">
-          <img src={office} alt="main" id="icons" />
+      <div className="logos">
+        <div className="logo hidden">
+          <img src={tdd} alt="TDD" id="icons" />
+          <div className="overlay">TDD</div>
         </div>
-        <div class="logo hidden">
-          <img src={excel} alt="main" id="icons" />
+        <div className="logo hidden">
+          <img src={maven} alt="Maven" id="icons" />
+          <div className="overlay">Maven</div>
         </div>
-        <div class="logo hidden">
-          <img src={teams} alt="main" id="icons" />
+        <div className="logo hidden">
+          <img src={junit} alt="JUnit" id="icons" />
+          <div className="overlay">JUnit</div>
+        </div>
+        <div className="logo hidden">
+          <img src={svn} alt="SVN" id="icons" />
+          <div className="overlay">SVN</div>
+        </div>
+        <div className="logo hidden">
+          <img src={checkstyle} alt="Checkstyle" id="icons" />
+          <div className="overlay">Checkstyle</div>
         </div>
       </div>
-      <div class="logos">
-        <div class="logo hidden">
-          <img src={gitlab} alt="main" id="icons" />
+      <div className="logos">
+        <div className="logo hidden">
+          <img src={jira} alt="Jira" id="icons" />
+          <div className="overlay">Jira</div>
         </div>
-        <div class="logo hidden">
-          <img src={github} alt="main" id="icons" />
+        <div className="logo hidden">
+          <img src={confluence} alt="Confluence" id="icons" />
+          <div className="overlay">Confluence</div>
+        </div>
+        <div className="logo hidden">
+          <img src={slack} alt="Slack" id="icons" />
+          <div className="overlay">Slack</div>
+        </div>
+        <div className="logo hidden">
+          <img src={arcade} alt="Arcade" id="icons" />
+          <div className="overlay">Arcade</div>
         </div>
       </div>
-      <div class="logos">
-        <div class="logo hidden">
-          <img src={photoshop} alt="main" id="icons" />
+      <div className="logos">
+        <div className="logo hidden">
+          <img src={office} alt="Office" id="icons" />
+          <div className="overlay">Office</div>
         </div>
-        <div class="logo hidden">
-          <img src={premiere} alt="main" id="icons" />
+        <div className="logo hidden">
+          <img src={excel} alt="Excel" id="icons" />
+          <div className="overlay">Excel</div>
         </div>
-        <div class="logo hidden">
-          <img src={illustrator} alt="main" id="icons" />
+        <div className="logo hidden">
+          <img src={teams} alt="Teams" id="icons" />
+          <div className="overlay">Teams</div>
+        </div>
+      </div>
+      <div className="logos">
+        <div className="logo hidden">
+          <img src={gitlab} alt="GitLab" id="icons" />
+          <div className="overlay">GitLab</div>
+        </div>
+        <div className="logo hidden">
+          <img src={github} alt="GitHub" id="icons" />
+          <div className="overlay">GitHub</div>
+        </div>
+      </div>
+      <div className="logos">
+        <div className="logo hidden">
+          <img src={photoshop} alt="Photoshop" id="icons" />
+          <div className="overlay">Photoshop</div>
+        </div>
+        <div className="logo hidden">
+          <img src={premiere} alt="Premiere" id="icons" />
+          <div className="overlay">Premiere</div>
+        </div>
+        <div className="logo hidden">
+          <img src={illustrator} alt="Illustrator" id="icons" />
+          <div className="overlay">Illustrator</div>
         </div>
       </div>
     </section>
