@@ -1,50 +1,53 @@
-#extra {
-    font-family: "League Spartan", sans-serif;
-    width: 100%;
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 30px;
-    box-sizing: border-box;
+.swiper {
+    width: 80%;
+    height: auto;
 }
 
-.collage-carousel {
-  position: relative;
-  display: flex;
-  align-items: center;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.collage-inner {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Adjust columns based on your collage */
-  gap: 5px; /* Adjust spacing between images */
-  width: 100%;
-  transition: transform 0.5s ease;
+.swiper-slide:focus {
+    outline: none;
 }
 
-.collage-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 5px; /* Optional: Rounded corners */
+.swiper-slide-active {
+    border: none;
+    box-shadow: none;
 }
 
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 18px;
-  z-index: 100;
+.swiper-slide img {
+    display: block;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 0 4px 3px rgba(58, 57, 57, 0.2);
+
 }
 
-.carousel-control.prev {
-  left: 10px;
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.carousel-control.next {
-  right: 10px;
+.swiper-slide:focus,
+.swiper-slide:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+.swiper-pagination {
+    display: none;
+  }
+
+.box {
+    height: 300px;
 }

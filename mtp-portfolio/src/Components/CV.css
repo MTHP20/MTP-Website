@@ -21,7 +21,12 @@
 }
 
 #CV {
-  position: relative;
+  font-family: "League Spartan", sans-serif;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 300px;
+  box-sizing: border-box;
 }
 
 .cvTitle {
