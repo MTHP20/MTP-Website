@@ -93,3 +93,18 @@ body {
     box-shadow: 0 4px 3px rgba(58, 57, 57, 0.7);
 
 }
+
+.projectInfo {
+    padding: 50px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.projectDes {
+    padding-top: 20px;
+    color: #6483AF;
+    font-size: 27px;
+    text-align: start;
+    width: 750px;
+    line-height: 1.3;
+}

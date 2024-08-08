@@ -52,20 +52,21 @@ const About = () => {
       </div>
       <div className='box'></div>
       <div className="moreInfo">
-        <div class="grid-item">I've always had a set path to study Computer Science all starting from a high interest in technology and building computers when I was younger.
-          As learned throughout my course at Royal Holloway, I'd say my favourite programming language to use is Java.
-          I aim to expand my expertise by learning more programming languages and code bigger projects within.
+        <div class="grid-item">
+          I've always had a strong interest in technology, which began with building computers when I was younger.
+          This passion naturally led me to study Computer Science at Royal Holloway, where I discovered that Java is my favorite programming language.
+          I aim to further expand my expertise by learning additional programming languages and taking on more ambitious projects.
         </div>
-        <div class="grid-item">However, I also enjoy coding in HTML and JavaScript with this being the programming language I've used the most.
-          From personal projects like this Portfolio to university projects such as a Restaurant Management System I aspire to create a small business and start developing websites for local clients on the side.
+        <div class="grid-item">I also enjoy coding in HTML and JavaScript, which are the programming languages I've used the most. From personal projects like this portfolio to university projects such as a Restaurant Management System,
+          I've developed a passion for web development. I aspire to create a small business and start developing websites for local clients on the side.
           <br></br><i>See projects down below.</i>
         </div>
-        <div class="grid-item">Along this side hustle, I'm also driven to obtain a full-time career in the Software Development or Full Stack Engineering field.
-          I've also gained an interest in technology consultancy field where I would be able to utilise modules I've learnt such as IT Project Management to support companies with
-          IT solutions leveraging my problem-solving acumen and dedication to deliver high-quality solutions.
+        <div class="grid-item">In addition to my side hustle, I'm also committed to pursuing a full-time career in Software Development or Full Stack Engineering.
+          I've developed a strong interest in technology consultancy, where I can apply knowledge from modules like IT Project Management to help companies with IT solutions.
+          I aim to leverage my problem-solving skills and dedication to deliver high-quality results in this field.
         </div>
-        <div class="grid-item">Outside work I enjoy playing basketball and exercising regularly at the gym to ensure activity and healthiness, listening to and playing music,
-          and hopefully soon travel and explore different parts of the world
+        <div class="grid-item">Outside of work, I enjoy staying active by playing basketball and exercising regularly at the gym. I also have a passion for music, both listening to and playing it.
+          In the near future, I hope to travel and explore different parts of the world.
         </div>
       </div>
       <div className='box'></div>

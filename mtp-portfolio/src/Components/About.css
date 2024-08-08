@@ -9,7 +9,7 @@
 
 main {
   padding: 5rem;
-  padding-top: 0rem; /* Adjust this value to match the height of your header */
+  padding-top: 0rem; 
 }
 
 body {
@@ -153,7 +153,10 @@ body {
     text-align: center;
     font-size: 26px;
     text-align: start;
-    font-weight: 500;
+    font-weight:350;
+    letter-spacing: 1;
+    line-height: 1;
+
 }
 
 @media (max-width: 768px) {
