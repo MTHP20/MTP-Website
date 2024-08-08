@@ -3,42 +3,60 @@
 }
 
 .footer {
-    background-color: #333;
-    color: #fff;
+    background-color: transparent;
+    color: #6483AF;
     padding: 20px;
     text-align: center;
     position: relative;
     bottom: 0;
     width: 100%;
+    font-size: 28px;
+    font-weight: 500;
   }
 
 .footer-content {
-    max-width: 1200px;
+    display: flex;
+    gap: 1rem;
+    max-width: 60%;
     margin: 0 auto;
+    text-align: start;
 }
 
+/* 
 .footer p {
     margin: 0;
-    font-size: 14px;
-}
+    font-size: 14x;
+} */
 
 .footer-links {
     list-style: none;
     padding: 0;
     margin: 10px 0 0;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4A6763;
 }
 
 .footer-links li {
     display: inline;
-    margin: 0 10px;
+    margin: left;
 }
 
 .footer-links a {
-    color: #fff;
     text-decoration: none;
+    color: #4A6763;
 }
 
 .footer-links a:hover {
     text-decoration: underline;
+}
+
+.company {
+    width: 50%;
+
+}
+
+.elsewhere, .contact {
+    width: 25%;
+
 }

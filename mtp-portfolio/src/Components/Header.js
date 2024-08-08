@@ -154,4 +154,8 @@ const Header = () => {
   );
 };
 
+export const toggleContactForm = () => {
+  console.log('Toggling contact form');
+};
+
 export default Header;
