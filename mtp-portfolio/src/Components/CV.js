@@ -63,12 +63,12 @@ const CV = () => {
       <div className='box'></div>
       <h1 className="header">SLIDE TO SEE MY RECENT TRIP TO BARCELONA!</h1>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={2.75}
         spaceBetween={15}
         loop={true}
-        pagination={{ clickable: true }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
+        pagination={false}
+        navigation={false}
+        modules={[]}
         className="mySwiper"
       >
         {images.map((img, index) => (
