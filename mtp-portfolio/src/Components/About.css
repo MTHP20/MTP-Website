@@ -24,7 +24,6 @@ body {
     font-size: 50px;
     text-align: center;
     color: #6483AF;
-
 }
 
 .Timeline {
@@ -142,8 +141,7 @@ body {
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    background-color: rgba(255, 236, 197, 0.3);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #F5EDE6;
 }
 
 .grid-item {

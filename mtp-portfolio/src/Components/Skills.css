@@ -1,5 +1,10 @@
 #skills {
-    font-family: 'Dosis', sans-serif;
+    font-family: "League Spartan", sans-serif;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .header {
@@ -51,4 +56,46 @@ section {
 #shortcut {
     border-radius: 50%;
     width: 30px;
+}
+
+#icons {
+    box-shadow: 0 4px 3px rgba(58, 57, 57, 0.6);
+    border: none;
+}
+
+.logo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    border-radius: 70%;
+    display: flex;
+}
+
+.logo:hover {
+    transform: scale(1.45);
+    z-index: 10;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.logo .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.logo:hover .overlay {
+    opacity: 1;
 }
