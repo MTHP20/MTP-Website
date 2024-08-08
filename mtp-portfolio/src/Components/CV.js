@@ -66,7 +66,7 @@ const CV = () => {
         slidesPerView={2.75}
         spaceBetween={15}
         loop={true}
-        pagination={false}
+        pagination={true}
         navigation={false}
         modules={[]}
         className="mySwiper"
