@@ -22,10 +22,11 @@
 
 .swiper-slide img {
     display: block;
-    object-fit: cover;
-    border-radius: 50px;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the area */
+    border-radius: 50px; /* Applies the rounded corners to the image */
     box-shadow: 0 4px 3px rgba(58, 57, 57, 0.2);
-
 }
 
 .swiper {
@@ -41,13 +42,30 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  display: none;
+    display: none;
 }
 
 .swiper-pagination {
     display: none;
-  }
+}
 
 .box {
     height: 300px;
+}
+
+.caption {
+    position: absolute;
+    padding: 10px;
+    left: 5%;
+    background-color: rgba(128, 128, 128, 0.8); /* Set the caption background to grey */
+    color: white; /* Text color inside the caption */
+    text-align: center;
+    transition: bottom 0.2s ease, opacity 0.5s ease;
+    opacity: 0;
+    border-radius: 15px; /* Apply border-radius to match the rounded style */
+  }
+
+.image-container:hover .caption {
+    bottom: 10px;
+    opacity: 1;
 }

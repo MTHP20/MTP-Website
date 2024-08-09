@@ -22,7 +22,11 @@ import img11 from '../images/spain/11.JPEG';
 import img12 from '../images/spain/12.JPEG';
 
 const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12];
-
+const captions = [
+  'Caption 1', 'Umbrella Street in Poble Espanyol', 'TOURISTS GO HOME', 'Basílica de la Sagrada Família',
+  'Caption 5', 'Caption 6', 'Park Güell', 'Caption 8',
+  'Mercat de la Boqueria', 'Fútbol at Park Güell', 'Caption 11', 'Barceloneta Beach'
+];
 const CV = () => {
   const [isModalVisible, setModalVisible] = useState(false);
   const [isAnimating, setAnimating] = useState(false);
@@ -72,8 +76,13 @@ const CV = () => {
         className="mySwiper"
       >
         {images.map((img, index) => (
-          <SwiperSlide key={index}>
-            <img src={img} alt={`Slide ${index + 1}`} id='images' />
+          <SwiperSlide key={index} className="swiper-slide">
+            <div className="image-container">
+              <img src={img} alt={`Slide ${index + 1}`} className="slide-image" />
+              {captions[index] && !captions[index].startsWith('Caption ') && (
+                <div className="caption">{captions[index]}</div>
+              )}
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

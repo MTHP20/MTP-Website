@@ -157,6 +157,10 @@ header nav ul li a.active {
   border-radius: 20px;
 }
 
+.caption {
+  color: white;
+}
+
 .contactForm.visible {
   opacity: 1;
   visibility: visible;
