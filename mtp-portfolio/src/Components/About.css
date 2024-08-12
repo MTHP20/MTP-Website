@@ -7,14 +7,11 @@
     box-sizing: border-box;
 }
 
-main {
-  padding: 5rem;
-  padding-top: 0rem; 
-}
-
+html,
 body {
-    padding-top: 10px;
-  }
+    position: relative;
+    height: 100%;
+}
 
 .top {
     margin-top: 0px;
@@ -125,8 +122,8 @@ body {
     font-weight: bold;
 }
 
-.box {
-    height: 120px;
+.boxGap {
+    height: 80px;
 }
 
 .moreInfo {
@@ -141,7 +138,7 @@ body {
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    background-color: #F5EDE6;
+    background-color: rgba(252, 219, 190, 0.3);
 }
 
 .grid-item {

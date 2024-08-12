@@ -106,7 +106,12 @@ const Header = () => {
         </nav>
         <nav>
           <ul>
-            <li><a onClick={toggleContactForm}>&nbsp;&nbsp;Contact&nbsp;&nbsp;</a></li>
+            <li>              <a
+              onClick={toggleContactForm}
+              className={isContactFormVisible ? 'contact-active' : ''}
+            >
+              &nbsp;&nbsp;Contact&nbsp;&nbsp;
+            </a></li>
             <li><a href="https://www.linkedin.com/in/mthp/">&nbsp;&nbsp;LinkedIn&nbsp;&nbsp;</a></li>
             <li><a href="http://github.com/MTHP20">&nbsp;&nbsp;GitHub&nbsp;&nbsp;</a></li>
           </ul>
@@ -123,27 +128,27 @@ const Header = () => {
           </div>
         </div>
         <form onSubmit={handleSubmit}>
-          <input 
-            type="email" 
-            placeholder="EMAIL" 
-            value={email} 
-            onChange={(e) => setEmail(e.target.value)} 
-            required 
+          <input
+            type="email"
+            placeholder="EMAIL"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
           />
-          <textarea 
-            className='subject' 
-            placeholder="SUBJECT" 
-            maxLength="25" 
-            value={subject} 
-            onChange={(e) => setSubject(e.target.value)} 
-            required 
+          <textarea
+            className='subject'
+            placeholder="SUBJECT"
+            maxLength="25"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+            required
           />
-          <textarea 
-            className='message' 
-            placeholder="ENTER MESSAGE..." 
-            value={message} 
-            onChange={(e) => setMessage(e.target.value)} 
-            required 
+          <textarea
+            className='message'
+            placeholder="ENTER MESSAGE..."
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
           />
           <div>
             <button type="submit" className="primaryBtn">SEND</button>

@@ -48,7 +48,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='box'></div>
+      <div className='boxGap'></div>
       <div className="moreInfo">
         <div class="grid-item">
           I've always had a strong interest in technology, which began with building computers when I was younger.
@@ -67,7 +67,7 @@ const About = () => {
           In the near future, I hope to travel and explore different parts of the world.
         </div>
       </div>
-      <div className='box'></div>
+      <div className='boxGap'></div>
       <div className="header">WORK EXPERIENCE</div>
       <div className='Timeline'>
         <div className='lloyds' data-aos="flip-right">

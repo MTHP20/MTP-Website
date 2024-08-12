@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
   height: 100vh;
   background: rgb(255,249,237);
-background: linear-gradient(180deg, rgba(255,249,237,1) 0%, rgba(255,240,212,1) 50%, rgba(255,249,237,1) 100%);
+  background-image: radial-gradient(circle, #fff4d6, #fff2e1, #fff2ef, #fff6fb, #fffaff, #fffaff, #fffaff, #fffaff, #fff6fb, #fff2ef, #fff2e1, #fff4d6);
 }
 
 header {

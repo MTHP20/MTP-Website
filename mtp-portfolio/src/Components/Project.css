@@ -67,6 +67,7 @@ body {
 
 .slide-content {
     position: relative;
+    text-align: center;
     width: 85%;
     height: 100%;
     display: flex;
@@ -106,5 +107,5 @@ body {
     font-size: 27px;
     text-align: start;
     width: 750px;
-    line-height: 1.3;
+    line-height: 1.4;
 }
