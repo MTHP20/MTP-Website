@@ -80,7 +80,7 @@ const CV = () => {
             <div className="image-container">
               <img src={img} alt={`Slide ${index + 1}`} className="slide-image" />
               {captions[index] && !captions[index].startsWith('Caption ') && (
-                <div className="caption">{captions[index]}</div>
+                <div className="captionExtra">{captions[index]}</div>
               )}
             </div>
           </SwiperSlide>
