@@ -36,7 +36,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className='uNi' data-aos="flip-right">
+        <div className='uNi' data-aos="flip-right" data-aos-offset="50">
           <div className='details'>
             <div className='schoolGrade'>
               <p>Royal Holloway, University of London</p>
@@ -46,8 +46,6 @@ const About = () => {
               <p>2021 - 2024 (3 YEARS)</p>
             </div>
           </div>
-        </div>
-        <div className='pResent' data-aos="flip-right">
         </div>
       </div>
       <div className='box'></div>
