@@ -54,8 +54,9 @@ body {
   } */
 
 .overviewContainer {
-    font-weight: bold;
-    font-size: 1.9rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
     width: 90%;
     max-width: 750px;
     margin-left: 50px;

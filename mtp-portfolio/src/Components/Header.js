@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
 import profile from '../images/profile.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Header = () => {
   const [isContactFormVisible, setContactFormVisible] = useState(false);
@@ -106,14 +109,24 @@ const Header = () => {
         </nav>
         <nav>
           <ul>
-            <li>              <a
-              onClick={toggleContactForm}
-              className={isContactFormVisible ? 'contact-active' : ''}
-            >
-              &nbsp;&nbsp;Contact&nbsp;&nbsp;
-            </a></li>
-            <li><a href="https://www.linkedin.com/in/mthp/">&nbsp;&nbsp;LinkedIn&nbsp;&nbsp;</a></li>
-            <li><a href="http://github.com/MTHP20">&nbsp;&nbsp;GitHub&nbsp;&nbsp;</a></li>
+            <li>
+              <a
+                onClick={toggleContactForm}
+                className={isContactFormVisible ? 'contact-active' : ''}
+              >
+                <FontAwesomeIcon icon={faEnvelope} />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/mthp/">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+            </li>
+            <li>
+              <a href="http://github.com/MTHP20">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -157,10 +170,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
-
-export const toggleContactForm = () => {
-  console.log('Toggling contact form');
 };
 
 export default Header;

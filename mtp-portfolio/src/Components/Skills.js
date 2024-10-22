@@ -54,7 +54,7 @@ const Skills = () => {
       <div className="logos">
         <div className="logo hidden">
           <img src={java} alt="Java" id="icons" />
-          <div className="overlay">Java</div>
+          <div className="overlay">Constructed a few programs in Java including a PostFix Calculator with a GUI.</div>
         </div>
         <div className="logo hidden">
           <img src={python} alt="Python" id="icons" />
